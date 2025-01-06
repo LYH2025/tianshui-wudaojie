@@ -1,0 +1,33 @@
+{
+  "name": "天水桥南五道街",
+  "short_name": "五道街",
+  "description": "天水桥南五道街官方网站，提供最新活动信息、商家介绍和联系方式。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e7da76",
+  "theme_color": "#e7da76",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/screenshot1.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "label": "首页截图"
+        }
+    ],
+    "orientation": "portrait",
+    "categories": ["business", "shopping", "food"]
+}

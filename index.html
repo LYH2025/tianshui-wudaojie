@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天水桥南五道街 - 一站式休闲娱乐体验地</title>
+    <meta name="description" content="天水桥南五道街官方网站，提供最新活动信息、商家介绍和联系方式。一站式休闲娱乐体验地，包含美食、购物、娱乐等丰富业态。">
+    <meta name="keywords" content="天水五道街,桥南五道街,天水美食,天水娱乐,天水购物">
+    <meta name="author" content="天水桥南五道街">
+    <meta property="og:title" content="天水桥南五道街 - 一站式休闲娱乐体验地">
+    <meta property="og:description" content="天水桥南五道街官方网站，提供最新活动信息、商家介绍和联系方式。">
+    <meta property="og:image" content="https://www.wudaojie.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.wudaojie.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <h1>天水桥南五道街</h1>
-            <ul>
+            <div class="logo">
+                <h1>天水桥南五道街</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">首页</a></li>
                 <li><a href="events.html">五道街进行时</a></li>
                 <li><a href="about.html">关于五道街</a></li>
+                <li><a href="sitemap.html">网站地图</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
+            <img class="hero-image" src="images/placeholder.jpg" data-src="images/hero.jpg" alt="天水桥南五道街">
             <div class="hero-content">
                 <h2>欢迎来到天水桥南五道街</h2>
                 <p>一站式休闲娱乐体验地，感受城市脉搏，享受生活乐趣</p>
@@ -43,24 +64,27 @@
         </section>
     </main>
 
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="contact-info">
                 <h4>联系我们</h4>
-                <p>地址：天水市桥南区五道街1号</p>
-                <p>电话：0938-1234567</p>
-                <p>邮箱：info@wudaojie.com</p>
+                <p>地址：天水市麦积区桥南家居建材城书苑路</p>
+                <p>电话：0938-6866100/182-1988-0916</p>
+                <p>邮箱：jprr@163.com</p>
             </div>
             <div class="social-media">
                 <h4>关注我们</h4>
                 <ul>
-                    <li><a href="#">微信</a></li>
-                    <li><a href="#">微博</a></li>
-                    <li><a href="#">抖音</a></li>
+                    <li><a href="https://weixin.qq.com" target="_blank" rel="noopener noreferrer">微信</a></li>
+                    <li><a href="https://www.douyin.com" target="_blank" rel="noopener noreferrer">抖音</a></li>
                 </ul>
             </div>
         </div>
-        <p>© 2023 天水桥南五道街. 保留所有权利。</p>
+        <p>© <span id="current-year">2023</span> 天水桥南五道街. 保留所有权利。</p>
     </footer>
 </body>
 </html>

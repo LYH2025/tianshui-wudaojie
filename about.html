@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于五道街 - 天水桥南五道街</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <h1>天水桥南五道街</h1>
-            <ul>
+            <div class="logo">
+                <h1>天水桥南五道街</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="events.html">五道街进行时</a></li>
                 <li><a href="about.html" class="active">关于五道街</a></li>
+                <li><a href="sitemap.html">网站地图</a></li>
             </ul>
         </nav>
     </header>
@@ -62,7 +71,22 @@
     </main>
 
     <footer>
-        <p>© 2023 天水桥南五道街. 保留所有权利。</p>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>联系我们</h4>
+                <p>地址：天水市麦积区桥南家居建材城书苑路</p>
+                <p>电话：0938-6866100/182-1988-0916</p>
+                <p>邮箱：jprr@163.com</p>
+            </div>
+            <div class="social-media">
+                <h4>关注我们</h4>
+                <ul>
+                    <li><a href="https://weixin.qq.com" target="_blank" rel="noopener noreferrer">微信</a></li>
+                    <li><a href="https://www.douyin.com" target="_blank" rel="noopener noreferrer">抖音</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© <span id="current-year">2023</span> 天水桥南五道街. 保留所有权利。</p>
     </footer>
 </body>
 </html>
